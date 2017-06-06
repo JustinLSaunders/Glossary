@@ -1,0 +1,42 @@
+body {
+  font-family: 'Lato', sans-serif;
+  padding: 12px 12px 0 12px;
+}
+div.content {
+  border: 1px solid #C7CDD1;
+  background: #f7f7f7;
+  border-radius: 5px;
+  padding: 15px 2.5% 10px 2.5%;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.5em;
+  color: #666;
+  margin: 15px 0;
+}
+
+h2 {
+  background: #003a63;
+  padding: 5px 8px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+a {
+  text-decoration:underline;
+  color:#008EE2;
+}
+
+dt{
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+dd{
+  font-size: 1.15rem;
+  margin: 5px 0 10px 8px;
+}
