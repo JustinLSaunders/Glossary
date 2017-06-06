@@ -1,13 +1,9 @@
-var glossaryArray = [];
-var container = document.getElementById("container");
-var sheetKey = "1sUHEIaLnJp3BFMh_HgsZQc_-aHMLPG5fvw9QXQu2IQs";
-
-window.onload = loadArray();
-
-$("button").on("click", localArray());
-
 function loadArray(){
+  var glossaryArray = [];
+  var container = document.getElementById("container");
+  var sheetKey = "1sUHEIaLnJp3BFMh_HgsZQc_-aHMLPG5fvw9QXQu2IQs";
   var getOldList = document.getElementById("terms");
+
   if (getOldList != null) {
     var oldList = document.getElementById("terms");
     container.removeChild(oldList);
@@ -64,5 +60,11 @@ function loadArray(){
     } 
   });
 };
+
+window.onload = loadArray();
+
+$("button").on("click", function(){
+  loadArray();
+});
 
   // var sheetKey = "1dGm9AnVIvpSMaUsIEiK6CO8UG6_mr2uwL7bFSQQNP_o"; //This is the protected sheet's ID. Figure out a way around "XMLHttpRequest cannot load https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&conti…pSMaUsIEiK6CO8UG6_mr2uwL7bFSQQNP_o/1/public/values?alt%3Djson&ltmpl=sheets. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'null' is therefore not allowed access."
