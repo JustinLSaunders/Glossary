@@ -1,4 +1,4 @@
-var sheetKey = "1sUHEIaLnJp3BFMh_HgsZQc_-aHMLPG5fvw9QXQu2IQs";
+var sheetKey = "1DB1Zv0wrkve8O4b261oV_aOps4pr6Ovvw4WVcb-pbeg";
 
 function loadArray(){
   var glossaryArray = [];
@@ -28,9 +28,7 @@ function loadArray(){
 
       localArray.push(data.feed.entry);
 
-      var forRun = localArray[0].length - 1;
-
-      for (i = 0; i <= forRun; i++){
+      for (i = 0; i <= localArray[0].length - 1; i++){
         var obj = {};
         obj["term"] = localArray[0][i].gsx$termconcept.$t;
         obj["definition"] = localArray[0][i].gsx$definitiondiscussion.$t;
@@ -38,9 +36,8 @@ function loadArray(){
       };
 
       var sortedArray = _.sortBy(tempArray, "term");
-      var forRun = sortedArray.length - 1;
 
-      for (i = 0; i <= forRun; i++){
+      for (i = 0; i <= sortedArray.length - 1; i++){
         var termText = sortedArray[i].term;
         var defText = sortedArray[i].definition;
         dlCreation(termText, defText);
@@ -67,3 +64,5 @@ window.onload = loadArray();
 $("button").on("click", function(){
   loadArray();
 });
+
+window.onload = console.log()
