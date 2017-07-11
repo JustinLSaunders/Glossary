@@ -1,7 +1,6 @@
 var sheetKey = "1DB1Zv0wrkve8O4b261oV_aOps4pr6Ovvw4WVcb-pbeg";
 
 function loadArray(){
-  var glossaryArray = [];
   var container = document.getElementById("container");
   var getOldList = document.getElementById("terms");
 
