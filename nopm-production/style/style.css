@@ -39,7 +39,7 @@ dd:last-child{
   margin: 5px 0 0 8px;
 }
 
-button {
+#refresh {
   width: 88px;
   height: 36px;
   background: #666;
@@ -48,15 +48,7 @@ button {
   border-radius: 3px;
   border: 1px solid #666;
   font-weight: 300;
-  
-}
 
-button:hover, button:focus {
-  -webkit-transition-duration: 0.3s;
-  background: #002856;
-  border: 1px solid #002856;
-  transition-duration: 0.3s;
-  box-shadow: 2px 2px 3px #666;  
 }
 
 @media (min-width: 768px) {

@@ -64,6 +64,14 @@ function loadArray(){
 
 window.onload = loadArray();
 
-$("button").on("click", function(){
+$("#refresh").click(function(){
+    event.preventDefault();
+
+    $("#refresh").mouseup(function() {
+        blurMethod = function getBlur() {
+            document.getElementById("refresh").blur();
+        };
+        blurMethod();
+    });
   loadArray();
 });
