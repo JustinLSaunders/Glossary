@@ -23,7 +23,6 @@ function loadArray(){
   $.ajax({
     url:"https://spreadsheets.google.com/feeds/list/" + sheetKey + "/1/public/values?alt=json",
     success: function sort(data){
-      var button = document.getElementById("refresh");
 
       localArray.push(data.feed.entry);
 
@@ -32,7 +31,7 @@ function loadArray(){
         obj["term"] = localArray[0][i].gsx$termconcept.$t;
         obj["definition"] = localArray[0][i].gsx$definitiondiscussion.$t;
         tempArray.push(obj);
-      };
+      }
 
       var sortedArray = _.sortBy(tempArray, "term");
 
@@ -53,82 +52,76 @@ function loadArray(){
         docTerm.appendChild(dtFill);
         glossaryList.appendChild(docDef);
         docDef.appendChild(ddFill);
-      };
+      }
     }
   });
-};
+}
 
 window.onload = loadArray();
-mouseAction("#refresh");
+buttonAction("#refresh");
 
-$("#refresh").click(function(event){
-    event.preventDefault();
-    loadArray();
-})
-
-function mouseAction(buttonId) {
-    $(buttonId).mouseenter(function(event){
-      event.preventDefault();
-      $(this).css({"background": "#002856", "border": "1px solid #002856", "box-shadow": "2px 2px 3px #666"});
+function buttonAction(buttonId) {
+    $(buttonId).click(function(event){
+        event.preventDefault();
+        loadArray();
     });
 
-    $(buttonId).mousedown(function(event){
-      event.preventDefault();
-      $(this).css("box-shadow", "none");
-    });
-
-    $(buttonId).mouseup(function(event){
-      event.preventDefault();
-      $(this).css({"box-shadow": "2px 2px 3px #666"});
-    });
-
-    $(buttonId).mouseleave(function(event){
-      event.preventDefault();
-      if ($(this).is(":focus")) {
+    $(buttonId).mouseenter(function (event) {
+        event.preventDefault();
         $(this).css({"background": "#002856", "border": "1px solid #002856", "box-shadow": "2px 2px 3px #666"});
-      }
-      else {
-        $(this).css({"background": "#666", "color": "#fff", "border": "1px solid #666", "box-shadow": "none"});
-      }
-
-    })
-
-    $(buttonId).focusin(function(){
-        $(this).css({"background": "#002856", "border": "1px solid #002856", "box-shadow": "2px 2px 3px #666"});
-
-        $(this).keydown(function() {
-          $(this).css("box-shadow", "none");
-        });
-
-        $(this).keyup(function() {
-          $(this).css({"box-shadow": "2px 2px 3px #666"});
-        });
-
-        $(this).mouseenter(function(event){
-          event.preventDefault();
-          $(this).css({"background": "#002856", "border": "1px solid #002856", "box-shadow": "2px 2px 3px #666"});
-        });
-
-        $(this).mousedown(function(event){
-          event.preventDefault();
-          $(this).css("box-shadow", "none");
-        });
-
-        $(this).mouseup(function(event){
-          event.preventDefault();
-          $(this).css({"-webkit-transition-duration": "0.1s", "transition-duration": "0.1s", "box-shadow": "2px 2px 3px #666"});
-        });
-
     });
 
-    $(buttonId).focusout(function(event){
+    $(buttonId).mousedown(function (event) {
+        event.preventDefault();
+        $(this).css("box-shadow", "none");
+    });
+
+    $(buttonId).mouseup(function (event) {
+        event.preventDefault();
+        $(this).css({"box-shadow": "2px 2px 3px #666"});
+    });
+
+    $(buttonId).mouseleave(function (event) {
+        event.preventDefault();
+        if ($(this).is(":focus")) {
+            $(this).css({"background": "#002856", "border": "1px solid #002856", "box-shadow": "2px 2px 3px #666"});
+        }
+        else {
+            $(this).css({"background": "#666", "color": "#fff", "border": "1px solid #666", "box-shadow": "none"});
+        }
+    });
+
+    $(buttonId).focusin(function (event) {
       event.preventDefault()
-      if ($(this).is(":hover")) {
-          $(this).css({"background": "#002856", "border": "1px solid #002856", "box-shadow": "2px 2px 3px #666"});
-      }
-      else {
-          $(this).css({"background": "#666", "color": "#fff", "border": "1px solid #666", "box-shadow": "none"});
-      }
+        $(this).css({"background": "#002856", "border": "1px solid #002856", "box-shadow": "2px 2px 3px #666"});
 
+        $(this).keydown(function () {
+            $(this).css("box-shadow", "none");
+        });
+
+        $(this).keyup(function () {
+            $(this).css({"box-shadow": "2px 2px 3px #666"});
+        });
+
+        $(this).mousedown(function (event) {
+            event.preventDefault();
+            $(this).css("box-shadow", "none");
+        });
+
+        $(this).mouseup(function (event) {
+            event.preventDefault();
+            $(this).css({"box-shadow": "2px 2px 3px #666"});
+        });
+
+    });
+
+    $(buttonId).focusout(function (event) {
+        event.preventDefault();
+        if ($(this).is(":hover")) {
+            $(this).css({"background": "#002856", "border": "1px solid #002856", "box-shadow": "2px 2px 3px #666"});
+        }
+        else {
+            $(this).css({"background": "#666", "color": "#fff", "border": "1px solid #666", "box-shadow": "none"});
+        }
     });
 }
