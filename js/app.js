@@ -8,7 +8,7 @@ function loadArray(){
   if (getOldList != null) {
     var oldList = document.getElementById("terms");
     container.removeChild(oldList);
-  };
+  }
 
   var termsDiv = document.createElement("div");
   container.appendChild(termsDiv);
@@ -32,10 +32,10 @@ function loadArray(){
 
       for (i = 0; i <= forRun; i++){
         var obj = {};
-        obj["term"] = localArray[0][i].gsx$termconcept.$t;
+        obj["term"] = localArray[0][i].gsx$termconcept.$t.toUpperCase();
         obj["definition"] = localArray[0][i].gsx$definitiondiscussion.$t;
         tempArray.push(obj);
-      };
+      }
 
       var sortedArray = _.sortBy(tempArray, "term");
       var forRun = sortedArray.length - 1;
@@ -44,7 +44,7 @@ function loadArray(){
         var termText = sortedArray[i].term;
         var defText = sortedArray[i].definition;
         dlCreation(termText, defText);
-      };
+      }
 
       function dlCreation(term, definition){
 
@@ -57,10 +57,10 @@ function loadArray(){
         docTerm.appendChild(dtFill);
         glossaryList.appendChild(docDef);
         docDef.appendChild(ddFill);
-      };
+      }
     }
   });
-};
+}
 
 window.onload = loadArray();
 

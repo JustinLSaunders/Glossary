@@ -24,13 +24,13 @@ h1 {
 }
 
 dt {
-  font-weight: 200 bold;
+  font-weight: bold;
   font-size: 1.5rem;
   margin: 10px 0 0 0;
 }
 
 dd {
-  font-weight: 250;
+  font-weight: 300;
   font-size: 1.15rem;
   margin: 5px 0 25px 8px;
 }
@@ -46,7 +46,6 @@ button {
   color: #fff;
   border: 1px solid #666;
   border-radius: 3px;
-  border: 1px solid #666;
   font-weight: 300;
   
 }

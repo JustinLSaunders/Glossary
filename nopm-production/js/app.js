@@ -7,7 +7,7 @@ function loadArray(){
   if (getOldList != null) {
     var oldList = document.getElementById("terms");
     container.removeChild(oldList);
-  };
+  }
 
   var termsDiv = document.createElement("div");
   container.appendChild(termsDiv);
@@ -39,7 +39,7 @@ function loadArray(){
         var termText = sortedArray[i].term;
         var defText = sortedArray[i].definition;
         dlCreation(termText, defText);
-      };
+      }
 
       function dlCreation(term, definition){
 
@@ -92,7 +92,7 @@ function buttonAction(buttonId) {
     });
 
     $(buttonId).focusin(function (event) {
-      event.preventDefault()
+      event.preventDefault();
         $(this).css({"background": "#002856", "border": "1px solid #002856", "box-shadow": "2px 2px 3px #666"});
 
         $(this).keydown(function () {
