@@ -1,7 +1,6 @@
 var sheetKey = "1sUHEIaLnJp3BFMh_HgsZQc_-aHMLPG5fvw9QXQu2IQs";
 
 function loadArray(){
-  var glossaryArray = [];
   var container = document.getElementById("container");
   var getOldList = document.getElementById("terms");
 
@@ -24,7 +23,6 @@ function loadArray(){
   $.ajax({
     url:"https://spreadsheets.google.com/feeds/list/" + sheetKey + "/1/public/values?alt=json",
     success: function sort(data){
-      var button = document.getElementById("refresh");
 
       localArray.push(data.feed.entry);
 
