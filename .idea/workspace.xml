@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="642ea852-da8e-45c4-a7de-73e0688024cb" name="Default" comment="changed terms to lowercase to fix sorting">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nopm-production/production-html/index.html" />
+    <list default="true" id="642ea852-da8e-45c4-a7de-73e0688024cb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nopm-production/js/app.js" afterPath="$PROJECT_DIR$/nopm-production/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.css" afterPath="$PROJECT_DIR$/style/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nopm-production/production-html/index.html" afterPath="$PROJECT_DIR$/nopm-production/production-html/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nopm-production/production-html/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="890">
@@ -50,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            <state relative-caret-position="120">
+              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -184,6 +181,12 @@
             <path>
               <item name="glossary" type="b2602c69:ProjectViewProjectNode" />
               <item name="glossary" type="462c0819:PsiDirectoryNode" />
+              <item name="nopm-production" type="462c0819:PsiDirectoryNode" />
+              <item name="production-html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="glossary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="glossary" type="462c0819:PsiDirectoryNode" />
               <item name="style" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -297,12 +300,20 @@
       <workItem from="1499872793211" duration="20729000" />
       <workItem from="1504039061180" duration="618000" />
       <workItem from="1504040538530" duration="1624000" />
-      <workItem from="1506005176720" duration="5088000" />
+      <workItem from="1506005176720" duration="5245000" />
     </task>
+    <task id="LOCAL-00001" summary="changed terms to lowercase to fix sorting">
+      <created>1506014963106</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1506014963106</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33470000" />
+    <option name="totallyTimeSpent" value="33627000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-111" width="1080" height="1897" extended-state="6" />
@@ -543,14 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nopm-production/production-html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="890">
-          <caret line="1854" column="16" lean-forward="false" selection-start-line="1854" selection-start-column="16" selection-end-line="1854" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -561,8 +564,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="120">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nopm-production/production-html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="890">
+          <caret line="1854" column="16" lean-forward="false" selection-start-line="1854" selection-start-column="16" selection-end-line="1854" selection-end-column="16" />
           <folding />
         </state>
       </provider>
