@@ -30,7 +30,7 @@ function loadArray(){
 
       for (i = 0; i <= forRun; i++){
         var obj = {};
-        obj["term"] = localArray[0][i].gsx$termconcept.$t.toUpperCase();
+        obj["term"] = localArray[0][i].gsx$termconcept.$t.toLowerCase();
         obj["definition"] = localArray[0][i].gsx$definitiondiscussion.$t;
         tempArray.push(obj);
       }
